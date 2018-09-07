@@ -4,7 +4,7 @@
   margin: 0;
   padding: 0;
   font-family: 'Montserrat', sans-serif;
-  color: #000;
+  color: #1d2352;
 }
 :focus {
   outline: none;
@@ -12,11 +12,18 @@
 
 /* typography */
 h1, h2 {color: #fff;}
-h3 {font-size: 2.5rem;}
+h3 {
+  font-size: 2.0rem;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+
+}
 h4 {font-size: 1.5rem; font-weight: bold;}
 p {font-size: 1.5rem;}
 
-h3 span {position: relative;}
+h1 {text-transform: uppercase;}
+
+/* h3 span {position: relative;}
 h3 span:after {
   position: absolute;
   left :0;
@@ -25,12 +32,14 @@ h3 span:after {
   height: 1px;
   border-bottom: 1px solid #000;
   content: "";
-}
+} */
+
+.first-letter {font-size: 2.5rem;}
 
 .text-center {text-align: center;}
 
 /* container width overwrite */
-.container {max-width: 1300px;}
+.container {max-width: 1700px;}
 .row {margin: 40px 0;}
 
 .nav-container {border-bottom: 1px solid #000; margin-bottom: 20px;}
@@ -49,7 +58,7 @@ nav a:hover {color: #000; text-decoration: underline;}
 
 .main-callout {
   max-width: 1280px;
-  height: 400px;
+  height: 600px;
   padding: 10px;
   background-image: linear-gradient(
     rgba(0, 0, 0, 0.5),
@@ -81,10 +90,10 @@ nav a:hover {color: #000; text-decoration: underline;}
   padding: 10px;
   height: 200px;
   width: 150px;
-  background-color: #F5F5F5;
+  background-color: #1d2352;
   text-align: center;
 }
-.letter {font-size: 12rem; margin-bottom: 0;}
+.letter {font-size: 12rem; margin-bottom: 0; color: #fff;}
 .description {font-size: 1.2rem; position: relative; bottom: 25px;}
 
 .details {display: flex; justify-content: space-between;}
