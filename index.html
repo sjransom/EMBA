@@ -6,9 +6,9 @@
     
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/skeleton.css">
-    <link rel="stylesheet" href="css/emba.css">
+    <link rel="stylesheet" href="css/jquery.modal.min.css">
     
-    <script src="js/scripts.js"></script>
+    <link rel="stylesheet" href="css/emba.css">
 
     <title>EMBA</title>
   </head>
@@ -20,18 +20,19 @@
         <nav>
           <a href="#story">Story</a>
           <a href="#ingredients">Ingredients</a>
-          <a href="details">Details</a>
+          <a href="#details">Details</a>
           <img src="https://via.placeholder.com/115x115" alt="logo" />
-          <a href="#">Serve</a>
-          <a href="#">Social</a>
-          <a href="#">Contact</a>
+          <a href="#serve">Serve</a>
+          <a href="#social">Social</a>
+          <a href="#contact">Contact</a>
         </nav>
       </div>
 
       <div class="row">
 
         <div class="main-callout">
-          <h1>Quintessential and Quite Essential Drinks</h1>
+          <h1>Quintessential and Quite&nbsp;Essential&nbsp;Drinks</h1>
+          <p class="white-border"></p>
           <h2>Naturally Light Spritzers</h2>
         </div>
 
@@ -40,20 +41,20 @@
       <div id="story" class="row border-bottom">
         <div class="our-story">
 
-          <h3>Our Story</h3>
-          <p>&#8220;There is nothing better than drinking in good company, but wouldn&#8217;t be great if there was a naturally lighter alcoholic beverage? </p>
+          <h3><span>Our Story</span></h3>
+          <p>“There is nothing better than drinking in good company, but wouldn&#8217;t be great if there was a naturally lighter alcoholic beverage? </p>
           <p>We feel passionately about changing the way we enjoy alcohol. So after some masterful experimentation, we finally created the perfect combination. A lightly sparkling and naturally bittersweet spritzer crafted in an English Winery.</p>
           <p>Invigoratingly light and lower alcohol, Emba is our refreshing answer to those muddled memories and expanding waistlines after &#8216;one too many&#8217;. At 4% ABV and less than 90 calories a serve, one bottle of Emba is equivalent to one unit of alcohol. Simple.</p>
           <p>Taking great pride in our taste buds, we created a beverage uncompromising on quality and character that intertwines botanical and bitters flavours with exciting English wine. </p>
           <p>We are suitable for vegans, preferentially source local ingredients and avoid all things artificial allowing you to feel morally superior to boot.</p>
-          <p>Social drinking just got better.&#8221;</p>
+          <p>Social drinking just got better.”</p>
           <h4>Matt Clark, Founder</h4>
 
         </div>
       </div>
 
       <div id="ingredients" class="row border-bottom">
-        <h3 class="text-center">Ingredients</h3>
+        <h3 class="text-center"><span>Ingredients</span></h3>
         <div class="ingredients">
           <div class="ing-box">
             <p class="letter">E</p>
@@ -75,7 +76,7 @@
       </div>
 
       <div id="details" class="row border-bottom">
-        <h3 class="text-center">Details</h3>
+        <h3 class="text-center"><span>Details</span></h3>
         <div class="details">
           <div class="details-box">
             <div class="info">
@@ -116,9 +117,48 @@
         </div>
       </div>
 
+      <!-- <div id="social" class="row border-bottom">
+        <h3 class="text-center"><span>Social</span></h3>
+        <h5 class="text-center">TBD</h5>
+      </div> -->
+
+      <div id="contact" class="row border-bottom">
+        <div class="contact">
+          <h3 class="text-center"><span>Contact</span></h3>
+          <div class="split-content">
+            <div>
+              <p>Stocklists</p>
+              <p>“Would you like to see Emba stocked in your favourite&nbsp;establishment?”</p>
+              <p><a href="mailto:sales@embadrinks.co.uk">sales@embadrinks.co.uk</a></p>
+            </div>
+            <div class="get-in-touch">
+              <p>Get In Touch</p>
+              <p>“Please feel free to contact us directly”</p>
+              <p><a href="mailto:hello@embadrinks.co.uk">hello@embadrinks.co.uk</a></p>
+            </div>
+          </div>
+          <p class="text-center"><em>“Thank you to all those who enjoy what we do”</em></p>
+        </div>
+      </div>
+
+      <div class="row footer">
+        <p>Emba – Naturally Light Spritzers</p>
+        <p>© 2018 Ember Beverages Limited</p>
+        <p>All Rights Reserved</p>
+      </div>
 
 
     </div> <!-- container -->
 
+     <!-- Modal  -->
+     <div id="sticky" class="modal">
+      <p>Are you of legal driking age?</p>
+      <a class="modal-button" href="#" rel="modal:close">Yes</a>
+      <a class="modal-button" href="https://www.google.co.uk">No</a>
+    </div>
+
   </body>
+  <script src="js/jquery-3.3.1.min.js"></script>
+  <script src="js/jquery-modal.min.js"></script>
+  <script src="js/scripts.js"></script>
 </html>
