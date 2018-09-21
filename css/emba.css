@@ -76,7 +76,7 @@ nav a:hover {color: #000; }
 }
 .our-story {
   background-color: #F5F5F5;
-  background-image: url('../img/logo-white.png');
+  background-image: url('../img/logo-white-2.png');
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -139,13 +139,15 @@ nav a:hover {color: #000; }
   width: 50%;
   background-color: #F5F5F5;
 }
-.split-content p {text-align: center;}
+.split-content p {text-align: center; text-transform: uppercase;}
 
 .split-content div p:first-child {font-size: 2.0rem; font-weight: bold;}
-.split-content div p:nth-child(2) {font-size: 1.3rem;}
+.split-content div p:nth-child(2) {font-size: 1.6rem;}
 
 .get-in-touch {display: flex; flex-direction: column;}
 .get-in-touch p:nth-child(3) {margin-top: auto;}
+
+.thank-you {font-size: 2rem;}
 
 .footer {display: flex; justify-content: space-evenly;}
 .footer  p {font-size: 12px;}
