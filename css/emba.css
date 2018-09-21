@@ -64,15 +64,23 @@ nav a:hover {color: #000; }
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  position: relative;
 }
+.main-callout img {position: relative; top: 40px;}
 .main-callout h1, .main-callout h2 {text-align: center;}
 .white-border {border: 1px solid white; width: 70%;}
 
 .our-story, .contact {
-  background-color: #F5F5F5;
   padding: 20px;
   text-align: center;
 }
+.our-story {
+  background-color: #F5F5F5;
+  background-image: url('../img/logo-white.png');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.contact {padding-top: 0;}
 
 .ingredients {
   display: flex;
@@ -87,7 +95,7 @@ nav a:hover {color: #000; }
   text-align: center;
 }
 .letter {font-size: 12rem; margin-bottom: 0; color: #fff;}
-.description {font-size: 1.2rem; position: relative; bottom: 25px;}
+.description {font-size: 1.2rem; position: relative; bottom: 25px; color: #fff;}
 
 .details {display: flex; justify-content: space-between;}
 
@@ -125,7 +133,12 @@ nav a:hover {color: #000; }
 }
 
 .split-content {display: flex; justify-content: center; padding: 20px;}
-.split-content div {padding: 15px; width: 50%;}
+.split-content div {
+  padding: 15px;
+  margin: 0 20px;
+  width: 50%;
+  background-color: #F5F5F5;
+}
 .split-content p {text-align: center;}
 
 .split-content div p:first-child {font-size: 2.0rem; font-weight: bold;}
@@ -172,7 +185,6 @@ nav a:hover {color: #000; }
   .main-callout {height: 300px;}
   h1 {font-size: 2rem;}
   h2 {font-size: 1.5rem;}
-  .split-content div {width: auto;}
-  #instafeed {flex-direction: column;}
-  
+  .split-content div {width: 100%; margin: 10px 0;}
+  #instafeed {flex-direction: column; text-align: center;}
 }
