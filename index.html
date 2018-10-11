@@ -7,9 +7,9 @@
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="icon" href="favicon.ico" type="image/x-icon">
     
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/skeleton.css">
-    <link rel="stylesheet" href="css/jquery.modal.min.css">
+    <link rel="stylesheet" href="css/vendor/normalize.css">
+    <link rel="stylesheet" href="css/vendor/skeleton.css">
+    <link rel="stylesheet" href="css/vendor/jquery.modal.min.css">
     
     <link rel="stylesheet" href="css/emba.css">
 
@@ -62,38 +62,44 @@
         <div class="ingredients">
           <div class="ing-box">
             <p class="letter">E</p>
-            <p class="description">English Winery (Grapes)</p>
+            <p class="description">English Winery</p>
           </div>
           <img src="img/logo-black.png" alt="logo" />
           <div class="ing-box">
             <p class="letter">M</p>
-            <p class="description">Micro Bubbles (Bubbles)</p>
+            <p class="description">Micro Bubbles</p>
           </div>
           <img src="img/logo-black.png" alt="logo" />
           <div class="ing-box">
             <p class="letter">B</p>
-            <p class="description">British Botanicals (Elderflower)</p>
+            <p class="description">British Botanicals</p>
           </div>
           <img src="img/logo-black.png" alt="logo" />
           <div class="ing-box">
             <p class="letter">A</p>
-            <p class="description">Aromatic Bitters (Bitters&nbsp;plant)</p>
+            <p class="description">Aromatic Bitters</p>
           </div>
         </div>
       </div>
 
       <div id="social" class="row border-bottom">
-        <h3 class="text-center"><span><span class="first-letter">F</span>ollow <span class="first-letter">U</span>s @embadrinks</span></h3>
+        <div class="social-heading-container">
+          <img src="img/insta-logo.png" alt="insta logo" />
+          <h3 class="text-center"><span><span class="first-letter">F</span>ollow <span class="first-letter">U</span>s @embadrinks</span></h3>
+        </div>
         <div id="instafeed"></div>
-        <!-- <div class="static-img">
+        <div class="static-img">
           <div>
-            <img src="img/pimlico.jpg" alt="" />
+            <img src="img/static-large.jpg" alt="emba in bar" />
           </div>
           <div>
-            <img src="img/pimlico.jpg" alt="" />
-            <img src="img/pimlico.jpg" alt="" />
+            <img src="img/static-large-2.jpg" alt="emba in vineyard" />
           </div>
-        </div> -->
+          <div>
+            <img src="img/static-small-2.jpg" alt="emba in vineyard" />
+            <img src="img/static-small-1.jpg" alt="men making emba" />
+          </div>
+        </div>
       </div>
 
       <div id="details" class="row border-bottom">
@@ -102,16 +108,16 @@
           <div class="details-box">
             <div class="info">
               <p>Vegan Friendly</p>
-              <img class="details-img" src="img/vegan.jpg" alt="vegan friendly" />
+              <img class="details-img" src="img/vegan.png" alt="vegan friendly" />
             </div>
             <div class="overlay">
               <p>All our ingredients are natural, gluten free and vegan friendly - we have nothing to hide</p>
             </div>
           </div>
-          <div class="details-box">
+          <div class="details-box british">
             <div class="info">
               <p>British Crafted</p>
-              <img class="details-img" src="img/pimlico.jpg" alt="pimlico station" />
+              <img class="details-img" src="img/pimlico.png" alt="pimlico station" />
             </div>
             <div class="overlay">
               <p>We are based in Pimlico and prefer sourcing our ingredients locally – crafted in Britain</p>
@@ -120,7 +126,7 @@
           <div class="details-box">
             <div class="info">
               <p>Naturally Light</p>
-              <img class="details-img" src="img/cals.jpg" alt="89 calories" />
+              <img class="details-img" src="img/cals.png" alt="89 calories" />
             </div>
             <div class="overlay">
               <p>The beauty of our recipe is that it's naturally low calorie - 89 kcals per bottle</p>
@@ -129,7 +135,7 @@
           <div class="details-box">
             <div class="info">
               <p>Measured Approach</p>
-              <img class="details-img" src="img/units.jpg" alt="alcoholic units" />
+              <img class="details-img" src="img/units.png" alt="alcoholic units" />
             </div>
             <div class="overlay">
               <p>At 4% ABV and 250 ML bottles, monitoring consumption is simple - 1 UK Unit per Serve</p>
@@ -170,17 +176,19 @@
      <div id="sticky" class="modal">
        <div class="modal-bg">
          <div class="modal-content">
-          <img src="img/logo-white.png" alt="logo" />
-          <p>Are you of legal drinking age?</p>
-          <a class="modal-button modal-yes" href="#" rel="modal:close">Yes</a>
-          <a class="modal-button" href="https://www.google.co.uk">No</a>
+           <div>
+             <img src="img/logo-white.png" alt="logo" />
+             <p>Are you of legal drinking age?</p>
+             <a class="modal-button modal-yes" href="#" rel="modal:close">Yes</a>
+             <a class="modal-button" href="https://www.google.co.uk">No</a>
+           </div>
         </div>
       </div>
     </div>
 
+    <script src="js/vendor/jquery-3.3.1.min.js"></script>
+    <script src="js/vendor/jquery-modal.min.js"></script>
+    <script src="js/vendor/instafeed.min.js"></script>
+    <script src="js/scripts.js"></script>
   </body>
-  <script src="js/jquery-3.3.1.min.js"></script>
-  <script src="js/jquery-modal.min.js"></script>
-  <script src="js/instafeed.min.js"></script>
-  <script src="js/scripts.js"></script>
 </html>
