@@ -195,7 +195,7 @@ nav a:hover {color: #000; }
   color: #fff;
   text-decoration: none;
   text-transform: uppercase;
-  background-color: #292929;
+  background-color: #9d9c9c;
   border-radius: 10px;
   padding: 5px;
   margin: 0 20px;
@@ -213,9 +213,10 @@ nav a:hover {color: #000; }
   display: flex;
   justify-content: space-between;
 }
-#instafeed a img {height: 150px; width: 150px;}
-.static-img {display: flex; margin-top: 30px; overflow: hidden;}
+#instafeed a img {height: 185px; width: 182px;}
+.static-img {display: flex; overflow: hidden;}
 .static-img img {padding: 10px;}
+.static-img div:first-child img {padding-left: 0;}
 
 /* mobile */
 @media only screen and (max-width: 768px) {
