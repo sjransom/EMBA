@@ -44,7 +44,7 @@ nav {
   align-items: center;
   justify-content: space-between;
 }
-nav img {padding: 0 20px;}
+nav img {padding: 0 20px; width: 160px;}
 nav a {color: #1d2352; text-decoration: none; text-transform: uppercase;}
 nav a:hover {color: #000; }
 
@@ -174,7 +174,7 @@ nav a:hover {color: #000; }
   padding: 0;
 }
 .modal-bg {
-  background-image: url('../img/modal-bg-alt-blur.JPG');
+  background-image: url('../img/modal-bg-white.JPG');
   background-size: 100%;
   background-repeat: no-repeat;
   width: 100%;
@@ -188,9 +188,9 @@ nav a:hover {color: #000; }
   justify-content: center;
   align-items: center;
 }
-.modal-content img {width: 125px; padding-bottom: 10px;}
+.modal-content img {width: 200px; padding-bottom: 10px;}
 .modal p {
-  font-size: 2rem;
+  font-size: 3rem;
   color: #fff;
   text-transform: uppercase;
 }
