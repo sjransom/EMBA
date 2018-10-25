@@ -68,7 +68,7 @@ nav a:hover {color: #000; }
 }
 .main-callout img {position: relative; top: 40px;}
 .main-callout h1, .main-callout h2 {text-align: center;}
-.white-border {border: 1px solid white; width: 70%;}
+.white-border {border: 1px solid #fff; width: 70%;}
 
 .our-story, .contact {
   padding: 20px;
@@ -86,7 +86,7 @@ nav a:hover {color: #000; }
   display: flex;
   justify-content: space-between;
 }
-.ingredients img {
+.ingredients img.black-circle {
   width: 50px;
   height: 50px;
   padding: 0 5px;
@@ -100,6 +100,7 @@ nav a:hover {color: #000; }
   background-color: #1d2352;
   text-align: center;
 }
+.ing-box:hover .overlay, .ing-box:active .overlay {opacity: 1;}
 .letter {font-size: 12rem; margin-bottom: 0; color: #fff;}
 .description {font-size: 1.2rem; position: relative; bottom: 25px; color: #fff;}
 
@@ -109,7 +110,11 @@ nav a:hover {color: #000; }
   width: 200px;
   height: 240px;
 }
-.details-box .info p {text-transform: uppercase;}
+.details-box .info p {
+  text-transform: uppercase;
+  position: relative;
+  z-index: 1;
+}
 .details-box:hover .overlay, .details-box:active .overlay {opacity: 1;}
 .details-description {
   position: relative;
@@ -131,8 +136,9 @@ nav a:hover {color: #000; }
   width: 100%;
   opacity: 0;
   transition: .5s ease;
-  background-color: #F5F5F5;
+  background-color: #000;
 }
+.details .overlay {background-color: #F5F5F5;}
 .overlay p {
   color: #000;
   font-size: 14px;
@@ -159,6 +165,7 @@ nav a:hover {color: #000; }
 .get-in-touch p:nth-child(3) {margin-top: auto;}
 
 .thank-you {font-size: 2rem; text-transform: uppercase;}
+.thank-you .first-letter {font-size: 110%;}
 
 .footer {display: flex; justify-content: space-evenly;}
 .footer p {font-size: 12px; text-transform: uppercase;}
@@ -174,7 +181,7 @@ nav a:hover {color: #000; }
   padding: 0;
 }
 .modal-bg {
-  background-image: url('../img/modal-bg-white.JPG');
+  background-image: url('../img/modal-bg-white.jpg');
   background-size: 100%;
   background-repeat: no-repeat;
   width: 100%;
@@ -217,7 +224,9 @@ nav a:hover {color: #000; }
   display: flex;
   justify-content: space-between;
 }
-#instafeed a img {height: 185px; width: 182px;}
+#instafeed a img {height: 185px; width: 170px; padding: 0 5px;}
+#instafeed a img:first-child {padding-left: 0;}
+#instafeed a img:last-child {padding-right: 0;}
 .static-img {display: flex; overflow: hidden;}
 .static-img img {padding: 10px;}
 .static-img div:first-child img {padding-left: 0;}
