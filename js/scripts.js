@@ -36,7 +36,6 @@ $('a[href*="#"]')
 });
 
 // Modal
-
 $("#sticky").modal({
   escapeClose: false,
   clickClose: false,
@@ -50,6 +49,6 @@ var feed = new Instafeed({
   userId: '7966533289',
   accessToken: '7966533289.1677ed0.fd3fb3f9fd1645f888177c1ea2914ac3',
   limit: '6',
-  resolution: "low_resolution"
+  template: '<a href="{{link}}" target="_blank"><img src="{{image}}" /></a>'
 });
 feed.run();
