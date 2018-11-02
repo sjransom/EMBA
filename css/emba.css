@@ -56,7 +56,7 @@ nav a:hover {color: #000; }
   background-image: linear-gradient(
     rgba(0, 0, 0, 0.4),
     rgba(0, 0, 0, 0.4)),
-    url('../img/main-img-alt.jpg');
+    url('../img/main-img.jpg');
   background-size: cover;
   background-position-y: 25%;
   background-repeat: no-repeat;
@@ -136,7 +136,7 @@ nav a:hover {color: #000; }
   width: 100%;
   opacity: 0;
   transition: .5s ease;
-  background-color: #000;
+  background-color: #1d2352;
 }
 .details .overlay {background-color: #F5F5F5;}
 .overlay p {
