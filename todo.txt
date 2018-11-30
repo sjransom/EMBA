@@ -1,0 +1,10 @@
+- Ingredients order
+1. English winery = grapes
+2. Microbubbles = bubbles
+3. British botanical = elderflower
+4. Aromatic bitters = bitters
+
+Insta
+- static images
+-- 1 of normal picture, 1 of colour background (alternate between)
+- equal widths/gaps between all images

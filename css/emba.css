@@ -76,11 +76,11 @@ nav a:hover {color: #000; }
 }
 .our-story {
   background-color: #F5F5F5;
-  background-image: url('../img/logo-white-2.png');
+  background-image: url('../img/logo-white.png');
   background-repeat: no-repeat;
   background-position: center;
 }
-.contact {padding-top: 0;}
+.contact {padding-top: 0; padding-bottom: 0;}
 
 .ingredients {
   display: flex;
@@ -155,6 +155,9 @@ nav a:hover {color: #000; }
   text-align: center;
   width: 80%;
 }
+.details-box .overlay p:last-child {
+  top: 75%;
+}
 
 .split-content {display: flex; justify-content: center; padding: 20px;}
 .split-content div {
@@ -164,14 +167,21 @@ nav a:hover {color: #000; }
   background-color: #F5F5F5;
 }
 .split-content p {text-align: center; text-transform: uppercase;}
+.split-content p:nth-child(2) {text-transform: none;}
 .split-content div p:first-child {font-size: 2.0rem; font-weight: bold;}
 .split-content div p:nth-child(2) {font-size: 1.6rem;}
 
 .get-in-touch {display: flex; flex-direction: column;}
 .get-in-touch p:nth-child(3) {margin-top: auto;}
 
-.thank-you {font-size: 2rem; text-transform: uppercase;}
-.thank-you .first-letter {font-size: 110%;}
+.thank-you {
+  font-size: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-top: 20px;
+  margin-bottom: 0;
+}
+.thank-you .first-letter {font-size: 105%;}
 
 .footer {display: flex; justify-content: space-evenly;}
 .footer p {font-size: 12px; text-transform: uppercase;}
@@ -194,7 +204,6 @@ nav a:hover {color: #000; }
   height: 100%;
 }
 .modal-content {
-  /* background: rgba(255, 255, 255, 0.35); */
   width: 100%;
   height: 100%;
   display: flex;
@@ -207,6 +216,7 @@ nav a:hover {color: #000; }
   color: #fff;
   text-transform: uppercase;
 }
+.modal p span {color: #fff; font-size: 110%;}
 .modal-button {
   display: inline-block;
   color: #fff;
