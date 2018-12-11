@@ -256,7 +256,7 @@ nav a:hover {color: #000; }
   .ingredients, .details, .split-content, .footer {flex-direction: column; align-items: center;}
   .ing-box {margin: 20px 0;}
   .modal-bg {
-    background-image: url('../img/modal-bg-mob.JPG');
+    background-image: url('../img/modal-bg-mob.jpg');
     background-size: cover;
   }
   .modal-content div {padding: 35px;}
