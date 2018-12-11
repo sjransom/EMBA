@@ -1,10 +1,9 @@
-- Ingredients order
-1. English winery = grapes
-2. Microbubbles = bubbles
-3. British botanical = elderflower
-4. Aromatic bitters = bitters
-
-Insta
-- static images
--- 1 of normal picture, 1 of colour background (alternate between)
-- equal widths/gaps between all images
+3/12
+- Consistent gaps between pics
+- Alternate between actual picture and edited background image
+-- images in bookmarked folder
+- New grapes image
+- British botanicals image to add padding
+-- Mobile instagram
+- try to mimic instagram app, 3 rows of 3 
+-- still use the instafeed to try this
