@@ -32,7 +32,7 @@ p {font-size: 1.5rem;}
 .text-center {text-align: center;}
 
 /* container width overwrite */
-.container {max-width: 1700px;}
+.container {max-width: 1200px;}
 .row {margin: 40px 0;}
 
 .nav-container {border-bottom: 1px solid #000; margin-bottom: 20px;}
@@ -232,27 +232,44 @@ nav a:hover {color: #000; }
 .modal-button:hover {color: #fff;}
 
 
-/* instafeed */
+/* social */
 #social {overflow: hidden;}
 .social-heading-container {display: flex; justify-content: center; margin-block-end: 2rem;}
 .social-heading-container img {height: 30px; width: 30px; padding-right: 15px;}
 .social-heading-container h3 {margin-bottom: 0;}
-#instafeed {
+#instafeed { display: none;}
+
+/* insta img container */
+.insta-img-container {
   display: flex;
   justify-content: space-between;
 }
-#instafeed a img {height: 185px; width: 170px; padding: 0 5px;}
-#instafeed a img:first-child {padding-left: 0;}
-#instafeed a img:last-child {padding-right: 0;}
-.static-img {display: flex; overflow: hidden;}
-.static-img img {padding: 10px;}
-.static-img div:first-child img {padding-left: 0;}
+.insta-img-container img {
+  min-width: 0;
+  min-height: 0;
+}
+
+/* static img */
+.static-img {
+  display: flex;
+  margin-top: 25px;
+}
+.static-img div {
+
+}
+.static-img div.large-img-1, .static-img div.large-img-2 {margin-right: 25px;}
+.static-img div.small-imgs {
+  display: flex;
+  flex-direction: column;
+}
+.static-img div.small-imgs img:first-child {padding-bottom: 25px;}
 
 /* mobile */
 @media only screen and (max-width: 768px) {
   nav {flex-direction: column;}
   nav a {padding: 5px 0; order: 2;}
   nav img {order: 1; padding-bottom: 15px;}
+
   .ingredients, .details, .split-content, .footer {flex-direction: column; align-items: center;}
   .ing-box {margin: 20px 0;}
   .modal-bg {
@@ -262,14 +279,31 @@ nav a:hover {color: #000; }
   .modal-content div {padding: 35px;}
   .modal-button {margin: 0px 5px; width: 95px;}
   .modal-button.modal-yes {margin-bottom: 10px;}
+
   .main-callout {height: 300px;}
   h1 {font-size: 2rem;}
   h2 {font-size: 1.5rem;}
+
   .split-content {padding: 0;}
   .split-content div {width: 100%; margin: 10px 0;}
   .social-heading-container {position: relative;}
   .social-heading-container img {position: absolute; top: 15px; left: 20px;}
-  #instafeed {flex-direction: column; text-align: center;}
+  
   .static-img {flex-direction: column; overflow: auto;}
+  .static-img div.large-img-1, .static-img div.large-img-2 {margin-right: 0;}
   .static-img img {width: 100%;}
+
+  .insta-img-container {display: none;}
+
+  #instafeed {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  #instafeed a {
+    min-width: 0;
+    min-height: 0;
+    flex: 1 0 34%;
+    padding: 2px;
+  }
+  #instafeed a img {width: 100%;}
 }
