@@ -1,9 +1,4 @@
-3/12
-- Consistent gaps between pics
-- Alternate between actual picture and edited background image
--- images in bookmarked folder
-- New grapes image
-- British botanicals image to add padding
--- Mobile instagram
-- try to mimic instagram app, 3 rows of 3 
--- still use the instafeed to try this
+14/1
+- Remove skeleton.css
+- Fix age restriction background image for all screen sizes
+- Add links to each instagram image
