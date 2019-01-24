@@ -1,4 +1,0 @@
-14/1
-- Remove skeleton.css
-- Fix age restriction background image for all screen sizes
-- Add links to each instagram image
